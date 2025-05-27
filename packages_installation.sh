@@ -7,10 +7,26 @@ systemctl enable sddm
 pacman -S sddm-kcm
 
 pacman -S plasma-desktop kde-applications
-pacman -S falkon
+#ark
+#dolphin
+#ffmpegthumbs
+#gwenview
+#kamoso
+#kate
+#kcalc
+#kdegraphics-thumbnailers
+#kdesdk-thumbnailers
+#kompare
+#konqueror
+#konsole
+#ktorrent
+#kwrite
+#okular
+#spectacle
 
-pacman -S --needed git base-devel bitwarden nordvpn-bin libreoffice-still zsh zsh-autosuggestions
+pacman -S falkon bitwarden nordvpn-bin libreoffice-still zsh zsh-autosuggestions
 
+pacman -S --needed git base-devel 
 groupadd -r nordvpn && usermod -aG nordvpn jf
 
 exit
