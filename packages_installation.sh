@@ -38,6 +38,8 @@ cd yay/
 makepkg -si
 yay -yay -S zen-browser-bin
 
+pacman -S ssh-utils
+
 # bluetooth
 pacman -S bluez
 pacman -R gnome-bluetooth
