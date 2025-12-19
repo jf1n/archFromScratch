@@ -38,4 +38,20 @@ cd yay/
 makepkg -si
 yay -yay -S zen-browser-bin
 
+# bluetooth
+pacman -S bluez
+pacman -R gnome-bluetooth
+pacman -S dbus
+pacman -S bluez-lib
+pacman -S bluez-libs
+pacman -S bluez-plugins
+pacman -S bluez-utils
+pacman -S --needed --asdeps bluez-obex
+# as user
+exit
+systemctl --user enable obex
+systemctl --user start obex
+
+sudo su
+
 reboot
